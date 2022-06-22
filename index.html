@@ -4,10 +4,13 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
     <title>Document</title>
 </head>
 <body>
-    
+    <center><h2>Answer 1</h2></center>
+    <input type="number" name="" id="ask" placeholder="Enter a positve number" />
+    <button onClick="btn1()">Submit</button>
     <h3>Number:<span id="num"></span></h3>
     <h3>Round of value:<span id="round"></span></h3>
     <h3>Floor value:<span id="floor"></span></h3>
@@ -15,6 +18,9 @@
     <hr>
     <!-- End of question 1  -->
 
+    <center><h2>Answer 2</h2></center>
+    <input type="number" name="" id="ask1" placeholder="Enter a negatve number"/>
+    <button onClick="btn2()">Submit</button>
     <h3>Number:<span id="mnum"></span></h3>
     <h3>Round of value:<span id="mround"></span></h3>
     <h3>Floor value:<span id="mfloor"></span></h3>
@@ -22,6 +28,10 @@
     <hr>
     <!-- End of question 2  -->
 
+
+    <center><h2>Answer 3</h2></center>
+    <input type="number" name="" id="ask2" placeholder="Enter a positve decimal number"/>
+    <button onClick="btn3()">Submit</button>
     <h3>Number:<span id="pnum"></span></h3>
     <h3>Round of value:<span id="pround"></span></h3>
     <h3>Floor value:<span id="pfloor"></span></h3>
@@ -30,11 +40,210 @@
 
     <!-- End of question 3  -->
 
+    <center><h2>Answer 4</h2></center>
+    <input type="number" name="" id="ask3" placeholder="Enter a negative decimal number"/>
+    <button onClick="btn4()">Submit</button>
     <h3>Number:<span id="mpnum"></span></h3>
     <h3>Round of value:<span id="mpround"></span></h3>
     <h3>Floor value:<span id="mpfloor"></span></h3>
     <h3>Ceil value:<span id="mpciel"></span></h3>
     <hr>
+    <!-- End of question 4  -->
+
+    <center><h2>Answer 5</h2></center>
+    <input type="number" name="" id="ask4" placeholder="Enter a number">
+    <button onClick="btn5()">Submit</button>
+    <h3>The Abosolute Value of <span id="abs"></span></h3>
+    <hr>
+    <!-- End of question 5  -->
+
+    <center><h2>Answer 6</h2></center>
+    <h3>The Random Dice value: <span id="rndm"></span></h3>
+    <hr>
+    <!-- End of question 6  -->
+
+    <center><h2>Answer 7</h2></center>
+    <h3>The Random Coin value: <span id="coin"></span></h3>
+    <hr>
+    <!-- End of question 7  -->
+
+    <center><h2>Answer 8</h2></center>
+    <h3>The Random value Between 1 and 100: <span id="rndmValue"></span></h3>
+    <hr>
+    <!-- End of question 8 -->
+
+    <center><h2>Answer 9</h2></center>
+    <input type="text" name="" id="ask5" placeholder="Enter your weight in kilogram">
+    <button onClick="btn6()">Submit</button>
+    <h3>The Weight Of User is : <span id="weight"></span></h3>
+    <hr>
+    <!-- End of question 9 -->
+
+    <center><h2>Answer 10</h2></center>
+    <input type="number" id="secret" placeholder="Guess a number between 1 and 10" min="1" max="10" />
+    <button onClick="btn7()">Submit</button>
+    <h3 id="cong"></h3>
+    <h3 id="again"></h3>
+    <h3 id="actual"></h3> 
+    <hr>
+    <!-- End of question 10 -->
+
+    <center><h2>Answer 11</h2></center>
+    <h3>The current date & time in your browser is:</h3>
+    <h3 id="current"></h3>
+    <hr>
+    <!-- End of question 11 -->
+
+    <center><h2>Answer 12</h2></center>
+    <h3>The current month is : <span id="mnth"></span></h3>
+    <hr>
+    <!-- End of question 12 -->
+
+    <center><h2>Answer 13</h2></center>
+    <h3>Today is : <span id="days"></span></h3>
+    <hr>
+    <!-- End of question 13 -->
+
+    <center><h2>Answer 14</h2></center>
+    <h3 id="fun"></h3>
+    <h3 id="normal"></h3>
+    <hr>
+    <!-- End of question 14 -->
+
+    <center><h2>Answer 15</h2></center>
+    <h3 id="first"></h3>
+    <h3 id="last"></h3>
+    <hr>
+    <!-- End of question 15 -->
+
+
+    <!-- <h3 >Current Date : <span id="currentDate"></span> </h3> -->
+    <!-- End of question 16 -->
+
+
+    <h3 id="pm"></h3>
+    <h3 id="am"></h3>
+    <hr>
+    <!-- End of question 17 -->
+
+
+    <h3>Later Date: <span id="later"></span></h3>
+    <hr>
+    <!-- End of question 18 -->
+
+
+    <h3>The current date is : <span id="rday"></span></h3>
+    <h3><span id="lday"></span> Has Passed Since 1st Ramadan,2015</h3> 
+    <hr>
+    <!-- End of question 19 -->
+
+
+    <h3>On reference date <span id="ref"></span>, <span id="sec"></span>
+         seconds had passed away till now. </h3>
+        <hr>
+    <!-- End of question 20 -->
+
+
+    <h3 >Current date: <span id="crrnt"></span> </h3>
+    <h3>1 hour ago, it was <span id="minus"></span></h3>
+    <hr>
+    <!-- End of question 21 -->
+
+
+    <h3>Current Date is : <span id="crrntDate"></span></h3>
+    <h3>100 Years back, it was : <span id="oldYear"></span></h3>
+    <hr>
+    <!-- End of question 22 -->
+
+    <input type="number"  id="age" placeholder="Enter your age">
+    <button onClick="age()">Submit</button>
+
+    <h3>Your age is <span id="userAge"></span></h3>
+    <h3>Your Birth Year is <span id="userBirthYear"></span></h3>
+    <hr>
+    <!-- End of question 23 -->
+
+
+    <input type="text"  id="customerName" placeholder="Enter Your name"/>
+    <input type="number" id="units" placeholder="Enter number of units"> <br>
+    <button onClick="clickk()">Submit</button>
+
+
+    <h3>Customer Name: <span id="name"></span> </h3>
+    <h3>Number of units: <span id="unit"></span> </h3>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
