@@ -270,14 +270,27 @@ function clickk () {
 var monthsArray = ["Januaury","Febuaury" ,"March","April","May","June","July","August","September",
 "October","November","December"];
 
-var billMonth = neww.getMonth();
+var billMonth = new Date().getMonth();
+var currentBillMonth = monthsArray[billMonth];
 var userName = document.getElementById("customerName").value;
 var userUnit = document.getElementById("units").value;
+var charges = 14
+var subCharges=500;
+var netAmount = userUnit * charges;
+var grossAmount = netAmount + subCharges;
 document.getElementById("name").innerText=userName;
+document.getElementById("billMonth").innerText=currentBillMonth;
 document.getElementById("unit").innerText=userUnit;
-
+document.getElementById("charges").innerText=charges;
+document.getElementById("net").innerText=netAmount;
+document.getElementById("sub").innerText=subCharges;
+document.getElementById("gross").innerText=grossAmount;
 
 }
+
+
+// Question 25===============================================================================
+
 
 
 
